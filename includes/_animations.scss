@@ -1,0 +1,93 @@
+// D
+#my-name path:nth-child(1) {
+    stroke-dasharray:536.98px;
+    stroke-dashoffset:536.98px;
+    animation: line-animation 4s ease forwards 1s, whiteToBlue 9.5s ease forwards 0s;
+}
+// A
+#my-name path:nth-child(2) {
+    stroke-dasharray:478.48px;
+    stroke-dashoffset:478.48px;
+    animation: line-animation 5s ease forwards 2.3s, whiteToBlue 9.5s ease forwards 0s;
+}
+// N
+#my-name path:nth-child(3) {
+    stroke-dasharray:585.59px;
+    stroke-dashoffset:585.59px;
+    animation: line-animation 2.5s ease forwards 2.6s, whiteToBlue 9.5s ease forwards 0s;
+} 
+// G
+#my-name path:nth-child(4) {
+    stroke-dasharray:607.14px;
+    stroke-dashoffset:607.14px;
+    animation: line-animation 3.5s ease forwards 2.9s, whiteToBlue 9.5s ease forwards 0s;
+}
+// U
+#my-name path:nth-child(5) {
+    stroke-dasharray:483.61px;
+    stroke-dashoffset:483.61px;
+    animation: line-animation 2.5s ease forwards 3.2s, whiteToBlue 9.5s ease forwards 0s;
+}
+// L
+#my-name path:nth-child(6) {
+    stroke-dasharray:307.58px;
+    stroke-dashoffset:307.58px;
+    animation: line-animation 2.5s ease forwards 3.5s, whiteToBlue 9.5s ease forwards 0s;
+}
+// L
+#my-name path:nth-child(7) {
+    stroke-dasharray:307.58px;
+    stroke-dashoffset:307.58px;
+    animation: line-animation 2.5s ease forwards 3.8s, whiteToBlue 9.5s ease forwards 0s;
+}
+// E
+#my-name path:nth-child(8) {
+    stroke-dasharray:461.95px;
+    stroke-dashoffset:461.95px;
+    animation: line-animation 2.5s ease forwards 4.1s, whiteToBlue 9.5s ease forwards 0s;
+}
+// R
+#my-name path:nth-child(9) {
+    stroke-dasharray:529.67px;
+    stroke-dashoffset:529.67px;
+    animation: line-animation 2.5s ease forwards 4.4s, whiteToBlue 9.5s ease forwards 0s;
+}
+// U
+#my-name path:nth-child(10) {
+    stroke-dasharray:483.61px;
+    stroke-dashoffset:483.61px;
+    animation: line-animation 2.5s ease forwards 4.7s, whiteToBlue 9.5s ease forwards 0s;
+}
+// D
+#my-name path:nth-child(11) {
+    stroke-dasharray:536.97px;
+    stroke-dashoffset:536.97px;
+    animation: line-animation 4s ease forwards 5s, whiteToBlue 9.5s ease forwards 0s;
+}
+
+@keyframes line-animation{
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-delay: 6.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 1.7s;
+    animation-fill-mode: backwards;
+}
+@keyframes fadeIn {
+  from { opacity:0 }
+  to { opacity:1 }
+}
+
+
+
+
+
+
+
+ 

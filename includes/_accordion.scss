@@ -1,0 +1,80 @@
+/*///// ACCORDION /////*/
+.accordion {
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-border-width: 0;
+    border: 0;
+    margin-top: 60px;
+  }
+  .accordion-item {
+   /* border-bottom: 1px solid #e8e8e8;*/
+   border-radius: 20px !important;
+   margin-bottom: 15px;
+   box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.05);
+
+  }
+  .accordion-item:first-of-type {
+    /*border-top: 1px solid #e8e8e8;*/
+  }
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .accordion-body {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:0;
+    text-align: left;
+    font-size:19px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+  .accordion h2 {
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px !important;
+  }
+  .accordion-button {
+    /*font-size: 2.813rem;
+    font-weight: 600;
+    padding: 34px 0;
+    padding-left: 0;
+    padding-right: 0;*/
+    font-size:1.3rem;
+    border-radius:20px;
+    padding:30px 40px;
+  }
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  .accordion-button:focus-visible {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  .accordion-button:not(.collapsed) {
+    background: #fff;
+  }
+  .accordion img {
+    margin-right: 25px;
+    width: 65px;
+  }
+  .accordion .d-flex div {
+    margin-bottom: 35px;
+  }
+  .accordion-button::after {
+    transform: rotate(-45deg);
+    transition: 500ms;
+  }
+  .accordion-button::after, 
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(./img/icn-x.svg);
+    background-size: 20px;
+  }
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(0);
+  }
+  .career-development-menu a {
+    /*font-weight: 500;*/
+  }

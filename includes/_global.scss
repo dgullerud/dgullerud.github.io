@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+
+h1 {
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+body, p, li {
+  font-family: Roboto, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Buttons
+.btn {
+  border-color: rgba(20, 29, 75, 0.9);
+  color: rgba(20, 29, 75, .9);
+  &:hover {
+    border-color: rgba(20, 29, 75, 0.9);
+    background-color: rgba(20, 29, 75, 0.9);
+  &:active {
+    border-color:rgba(20, 29, 75, 0.9);
+    background-color: rgba(20, 29, 75, 0.9);
+  }
+  }
+}
+
+.btn[aria-expanded="false"] {
+  span {
+    &.show-info {
+      display: inline;
+    }
+    &.hide-info {
+      display: none;
+    }
+  }
+}
+.btn[aria-expanded="true"] {
+  span {
+    &.show-info {
+      display: none;
+    }
+    &.hide-info {
+      display: inline;
+    }
+  }
+}
+
+.hidden-details {
+  margin-top:15px;
+}

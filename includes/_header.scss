@@ -1,0 +1,110 @@
+header {
+  background-color:#fff;
+  padding: 25px 0;
+
+/*  position: fixed; 
+  top: 0;
+  left:0;*/
+  width: 100%;
+
+}
+.river-bg {
+  background-image: url(../img/river-background.jpg);
+  background-color:#D0D6F0;
+  background-size:cover;
+  background-position: 50% 50%;
+  margin:0 25px;
+  padding:0;
+  height: calc(100vh - 100px);
+  height: calc(100vh - 125px);
+  width: calc(100% - 50px);
+  border-radius: 20px;
+  position: relative;
+}
+
+.river-gradient {
+background-color:#000;
+background: linear-gradient(-5deg, white, /*#ee7752,*/ #e73c7e, purple, darkblue);
+background-size: 100% 500%;
+border-radius: 20px;
+animation: gradient 8s linear;
+/*animation-delay: .5s;*/
+animation-iteration-count :1;
+animation-fill-mode: forwards;
+height: calc(100vh - 100px);
+height: calc(100vh - 125px);
+mix-blend-mode: multiply;
+opacity: .5;
+width: 100%;
+position:absolute;
+left: 0;
+top: 0;
+z-index: 10;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: top;
+  }
+  100% {
+      background-position: bottom;
+  }
+}
+
+.hero-content{
+  text-align: center;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  z-index: 20;
+  height: calc(100vh - 100px);
+  height: calc(100vh - 125px);
+  // img {
+  //     width:140px;
+  //     border-radius:150px;
+  //     border:4px solid #fff;
+  //     display:block;
+  //     margin:0 auto;
+  // }
+  .img-kayak {
+    width: 120px;
+    height: auto;
+    margin: 0 auto 5px;
+    display: block;
+    // offset-path: path("M18.45,58.46s52.87-70.07,101.25-.75,101.75-6.23,101.75-6.23S246.38,5.59,165.33,9.08s-15,71.57-94.51,74.56S18.45,58.46,18.45,58.46Z");
+    // animation: kayakMotion 6s ease-in-out 5s 10 normal ;
+    transform: rotate(-90deg);
+    transform: scale(-1, 1);
+    // animation-fill-mode: forwards;
+  }
+  h2 {
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    margin: 10px auto 30vh;
+    letter-spacing: 3px;
+    overflow: hidden;
+    text-transform: lowercase;
+    span {
+      background-color: rgba(18, 30, 74, 0.3);
+      line-height:30px;
+      padding:30px 20px;      
+    }
+  }
+}
+
+#my-name {
+  width: 550px;
+  margin: 20px 0 5px;
+  path {
+    box-shadow: -5px -5px 5px #000;
+  }
+}
+
+.empty-header {
+  height: calc(100vh - 75px);
+}
